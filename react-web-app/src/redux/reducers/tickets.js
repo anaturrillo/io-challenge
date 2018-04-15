@@ -1,7 +1,9 @@
 const initialState = {
   all : null,
-  current: null,
-  status: 'INIT'
+  current: {},
+  showInfo: false,
+  status: 'INIT',
+  currentMarker: {}
 }
 
 const actionHandlers = {
@@ -13,8 +15,17 @@ const actionHandlers = {
   }),
   "TICKETS_LOAD_ERROR": (action) => ({
     all: action.payload
+  }),
+  "TICKET_SELECTED": (action) => ({
+    showInfo: true,
+    current: action.current,
+    currentMarker: action.currentMarker
+  }),
+  "TICKET_UNSELECTED": (action) => ({
+    showInfo: false,
+    current: {}
   })
-}
+};
 
 export default (state = initialState, action = {}) => {
   

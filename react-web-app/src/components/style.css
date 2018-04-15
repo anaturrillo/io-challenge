@@ -1,0 +1,38 @@
+.info.title-line{
+    height: 1px;
+    margin-left: 30px;
+}
+
+#infoTitle {
+    padding-left: 30px;
+    font-family: 'Lato-Heavy';
+    font-size: 15px !important;
+}
+
+#infoDescription {
+    font-family: 'Lato-Medium';
+    font-size: 15px !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+}
+
+#infoDate {
+    border-bottom: 1px solid #d9e1e9;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+#info {
+    padding-top: 30px;
+}
+
+.gm-style-iw {
+    width: 360px !important;
+    left: 0 !important;
+}
+
+.gm-style-iw > div:first-child {
+    width: 360px !important;
+}
